@@ -12,6 +12,15 @@
       href="./develop/assets/images/favicon-32x32.png"
     />
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./develop/css/styles.css" />
 
     <title>Frontend Mentor | Profile card component</title>
@@ -28,8 +37,12 @@
     </style>
   </head>
   <body>
-    <!-- the role and aria are so I don't get any complaints about lacking an h1 -->
-    <main role="heading" aria-level="1">
+    <!-- this is only here so I don't get complaints about lacking an h1! -->
+    <header>
+      <h1 class="sr-only">Profile Card Component</h1>
+    </header>
+
+    <main class="main">
       <!-- card -->
       <div class="profile-card">
         <div class="profile-card__image">

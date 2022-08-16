@@ -58,32 +58,106 @@ select {
 **   CUSTOM PROPS
 --------------------*/
 :root {
-/* COLOURS */
+  /* COLOURS */
+  --clr-dark-cyan: 185, 75%, 39%;
+  --clr-very-dark-desaturated-blue: 229, 23%, 23%;
+  --clr-dark-grayish-blue: 227, 10%, 46%;
+
+  --clr-dark-gray: 0, 0%, 59%;
 
   /* FONT FAMILY */
+  --ff-kumbh-sams: 'Kumbh Sans', sans-serif;
 
   /* FONT SIZE */
+  --fs-default: 1.125rem;
 
   /* FONT WEIGHT */
-
-  /* BREAKPOINTS */
+  --fw-regular: 400;
+  --fw-bold: 700;
 }
 
 /**------------------- 
 **    UTILITIES
 --------------------*/
 
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
 /**------------------- 
 **     GENERAL
 --------------------*/
 body {
+  font-family: var(--ff-kumbh-sams);
+  font-size: var(--fs-default);
+  font-weight: var(--fw-regular);
 }
 
 .main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
 
-  width: 100vw;
   min-height: 100vh;
+}
+
+/**------------------- 
+**   PROFILE CARD
+--------------------*/
+.profile-card {
+}
+
+/**--------------------- 
+** PROFILE CARD IMAGE
+----------------------*/
+.profile-card__image {
+}
+
+/**------------------- 
+**  TOP-BACKGROUND
+--------------------*/
+.top-half {
+}
+
+/**-------------------- 
+** USER PERSONAL INFO
+---------------------*/
+.bottom-half {
+}
+
+.profile-card__user-personal-information {
+}
+
+.profile-card__user-personal-information > .name {
+}
+
+.profile-card__user-personal-information > .age {
+}
+
+.profile-card__user-personal-information > .location {
+}
+
+/**-------------------- 
+**  USER SOCIAL INFO
+---------------------*/
+.profile-card__user-social-information {
+}
+
+.profile-card__user-social-information > .stats {
+}
+
+.profile-card__user-social-information > .followers {
+}
+
+.profile-card__user-social-information > .likes {
+}
+
+.profile-card__user-social-information > .photos {
 }
